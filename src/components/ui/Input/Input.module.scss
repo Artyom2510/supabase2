@@ -1,0 +1,90 @@
+@import "../../../assets/style/vars";
+
+.formfield {
+	$p: &;
+	position: relative;
+	padding-bottom: 20px;
+
+	&__label {
+		display: block;
+		margin-bottom: 10px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+		color: $gray;
+	}
+
+	&__textarea,
+	&__input {
+		display: block;
+		width: 100%;
+		padding: 15px 20px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+		color: $white;
+		background-color: $dark2;
+		border: none;
+		border-bottom: 1px solid transparent;
+		transition: border-color 0.2s ease, color 0.2s ease;
+
+		&:focus {
+			border-color: $green;
+		}
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus {
+			font: inherit !important;
+			caret-color: $white !important;
+			background-color: $dark2 !important;
+			color: $white !important;
+			-webkit-text-fill-color: $white;
+		}
+	}
+
+	&__input {
+		height: 51px;
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus {
+			box-shadow: 0 0 0 50px inset $dark2 !important;
+		}
+	}
+
+	&__textarea {
+		height: 291px;
+		resize: none;
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus {
+			box-shadow: 0 0 0 190px inset $dark2 !important;
+		}
+	}
+
+	&__error {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: inline-block;
+		font-family: "Montserrat", sans-serif;
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 400;
+		text-align: center;
+		white-space: nowrap;
+		overflow-x: hidden;
+		color: $ac;
+	}
+
+	&_error {
+		#{$p}__input {
+			color: $ac;
+			border-color: $ac;
+		}
+	}
+}

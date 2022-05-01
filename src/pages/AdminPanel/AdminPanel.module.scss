@@ -1,0 +1,11 @@
+.setcTable {
+	padding: 100px 0;
+
+	&__wrap {
+		overflow-x: auto;
+	}
+
+	&__table {
+		margin: 0 auto;
+	}
+}

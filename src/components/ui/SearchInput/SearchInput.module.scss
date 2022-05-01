@@ -1,0 +1,32 @@
+@import "../../../assets/style/vars";
+
+.search {
+	display: block;
+	width: 100%;
+	height: 54px;
+	padding: 15px 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	background-color: $dark2;
+	color: $white;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	transition: border-color 0.2s ease, color 0.2s ease;
+
+	&:focus {
+		border-color: $black;
+	}
+
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus {
+		font: inherit !important;
+		caret-color: $white !important;
+		background-color: $dark2 !important;
+		color: $white !important;
+		-webkit-text-fill-color: $white;
+		box-shadow: 0 0 0 50px inset $dark2 !important;
+	}
+}

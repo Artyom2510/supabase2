@@ -1,0 +1,55 @@
+@import "../../../assets/style/vars";
+
+.spinner {
+	position: relative;
+	width: 48px;
+	height: 48px;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 4px solid rgba($blue2, 0.4);
+		perspective: 500px;
+		animation: 1.5s linear infinite;
+	}
+
+	&::after {
+		animation-name: first-ring;
+	}
+
+	&::before {
+		animation-name: second-ring;
+	}
+
+	&_sm {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@keyframes first-ring {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(180deg) rotateY(360deg) rotateZ(360deg);
+	}
+}
+
+@keyframes second-ring {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(360deg) rotateY(180deg) rotateZ(360deg);
+	}
+}

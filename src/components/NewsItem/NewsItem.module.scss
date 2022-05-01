@@ -1,0 +1,38 @@
+@import "../../assets/style/vars";
+
+.newsItem {
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - 12px);
+	padding: 16px 12px 16px 50px;
+	background-color: $dark;
+	border-radius: 12px;
+	overflow: hidden;
+
+	@media (max-width: $xs) {
+		width: 100%;
+	}
+
+	&__title {
+		width: 100%;
+		margin-bottom: 12px;
+		text-align: center;
+		color: $white;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	&__desc {
+		width: 100%;
+		margin-bottom: 16px;
+		color: $gray;
+	}
+
+	&__when {
+		margin-top: auto;
+		margin-left: auto;
+		color: $blue2;
+	}
+}

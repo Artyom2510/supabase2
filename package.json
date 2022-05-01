@@ -1,0 +1,73 @@
+{
+	"name": "supabase2",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://artyom2510.github.io/supabase2/",
+	"dependencies": {
+		"@hookform/resolvers": "^2.8.8",
+		"@reduxjs/toolkit": "^1.8.1",
+		"@supabase/supabase-js": "^1.35.1",
+		"@tanstack/react-table": "^8.0.0-alpha.58",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.1.1",
+		"@testing-library/user-event": "^13.5.0",
+		"classnames": "^2.3.1",
+		"match-sorter": "^6.3.1",
+		"normalize.css": "^8.0.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-hook-form": "^7.30.0",
+		"react-redux": "^8.0.1",
+		"react-router-dom": "^6.3.0",
+		"react-scripts": "5.0.1",
+		"redux": "^4.2.0",
+		"web-vitals": "^2.1.4",
+		"yup": "^0.32.11"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "GENERATE_SOURCEMAP=false && react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			"Chrome >= 70",
+			"Firefox >= 64",
+			"Edge >= 16",
+			"Safari >= 11",
+			"not IE > 0",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.6",
+		"@types/react-dom": "^18.0.2",
+		"@types/react-redux": "^7.1.24",
+		"@typescript-eslint/eslint-plugin": "^5.20.0",
+		"@typescript-eslint/parser": "^5.20.0",
+		"eslint": "^8.13.0",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"gh-pages": "^3.2.3",
+		"sass": "^1.50.1",
+		"stylelint": "^14.7.1",
+		"stylelint-config-recommended": "^7.0.0",
+		"typescript": "^4.6.3"
+	}
+}
+

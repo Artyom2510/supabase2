@@ -1,0 +1,23 @@
+@import "../../../assets/style/vars";
+
+.th {
+	padding: 10px 0;
+	width: 20%;
+	vertical-align: top;
+
+	&__name {
+		margin-bottom: 4px;
+		color: $white;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	&__sortBtn {
+		width: 80%;
+	}
+
+	&__search {
+		margin-top: 10px;
+	}
+}

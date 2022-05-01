@@ -1,0 +1,11 @@
+@import "../../assets/style/vars";
+
+.home {
+	padding: 20px;
+
+	&__title {
+		text-transform: capitalize;
+		text-align: center;
+		color: $text;
+	}
+}

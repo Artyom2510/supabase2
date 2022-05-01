@@ -1,0 +1,31 @@
+@import "../../../assets/style/vars";
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 34px;
+	padding: 12px 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	border-radius: 15px;
+	background-color: $dark;
+	border: 2px solid $blue2;
+	color: $white;
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+	@media (max-width: $xs) {
+		padding: 12px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		background-color: $blue2;
+		color: $white;
+	}
+}

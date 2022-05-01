@@ -1,0 +1,45 @@
+@import "../../../assets/style/vars";
+
+.checkbox {
+	$p: &;
+
+	&__input {
+		display: none;
+
+		&:checked + #{$p}__label {
+			background-color: $blue2;
+
+			&::before {
+				transform: translate(100%, -50%);
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: block;
+		width: 42px;
+		height: 24px;
+		border-radius: 15px;
+		background-color: $dark2;
+		transition: background-color 0.2s ease;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 3px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: $blue;
+			transition: transform 0.2s ease;
+		}
+
+		&:hover {
+			background-color: $bg2;
+		}
+	}
+}

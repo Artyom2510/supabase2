@@ -1,0 +1,52 @@
+@import "../../assets/style/vars";
+
+.form {
+	&__title {
+		margin-bottom: 24px;
+		color: $white;
+		text-align: center;
+	}
+
+	&__fields {
+		margin-bottom: 20px;
+	}
+
+	&__field {
+		margin-bottom: 12px;
+	}
+}
+
+.formFooter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&_sending {
+		justify-content: center;
+	}
+
+	@media (max-width: $xs) {
+		flex-direction: column;
+	}
+
+	&__error {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 400;
+		color: $ac;
+	}
+
+	&__submit {
+		@media (max-width: $xs) {
+			margin-bottom: 24px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

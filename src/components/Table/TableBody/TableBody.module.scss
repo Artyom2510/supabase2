@@ -1,0 +1,14 @@
+@import "../../../assets/style/vars";
+
+.tr {
+	&:nth-child(even) {
+		background-color: $gray;
+	}
+}
+
+.td {
+	width: 20%;
+	padding: 8px;
+	color: $white;
+	word-break: break-all;
+}
