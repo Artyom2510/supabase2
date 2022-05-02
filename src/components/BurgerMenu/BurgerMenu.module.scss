@@ -1,0 +1,48 @@
+@import "../../assets/style/vars";
+
+.menu {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	padding: 40px 12px 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: $black;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+
+	&__list {
+		margin-bottom: 20px;
+	}
+
+	&__burger {
+		position: absolute;
+		top: 20px;
+		right: 12px;
+	}
+
+	&_visible {
+		opacity: 1;
+	}
+}
+
+.menuList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 12px;
+	padding: 0;
+
+	&__item {
+		margin-bottom: 12px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
