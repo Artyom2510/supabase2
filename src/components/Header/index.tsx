@@ -15,7 +15,6 @@ const Header: FC = () => {
 	const [menuDisplay, setMenuDisplay] = useState(false);
 	const [menuVisible, setMenuVisible] = useState(false);
 	const { pathname } = useLocation();
-	const [oldPathname, setOldPath] = useState(pathname);
 
 	const handleTglMenu = () => {
 		if (isMobile) {
@@ -34,11 +33,8 @@ const Header: FC = () => {
 	};
 
 	useEffect(() => {
-		if (menuDisplay && pathname !== oldPathname) {
-			handleTglMenu();
-		}
-		setOldPath(pathname);
-	}, [pathname, menuDisplay]);
+		menuDisplay && handleTglMenu();
+	}, [pathname]);
 
 	return (
 		<header className={styles.header}>
